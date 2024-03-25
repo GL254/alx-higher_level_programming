@@ -1,0 +1,10 @@
+#!/usr/bin/node
+/*
+ * The prints out "C is fun" x number of times
+ * where x is an argument that can be converted to number
+ */
+'use strict';
+const numTimes = parseInt(process.argv[2]); let i;
+if (process.argv[2] === undefined || isNaN(numTimes)) { console.log('Missing number of occurences'); } else {
+  for (i = 0; i < numTimes; i++) { console.log('C is fun'); }
+}
